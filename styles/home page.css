@@ -1,0 +1,88 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: black;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: blue;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* MAIN SECTION */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE CARD */
+.card {
+    width: 45%;
+    text-align: center;
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+/* TEXT SIDE */
+.text-side {
+    width: 45%;
+    font-size: 24px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    color: blue;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE (for phones) */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card,
+    .text-side {
+        width: 100%;
+    }
+}
